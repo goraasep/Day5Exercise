@@ -9,7 +9,7 @@ public class Problem1 {
         String chosenWord = selectRandomWords(words).toUpperCase();
         String hiddenWord = hideWord(chosenWord);
         int attempts = 5;
-        System.out.println("Choosen word: " + chosenWord); //for debug
+//        System.out.println("Choosen word: " + chosenWord); //for debug
         while (attempts > 0) {
             System.out.println("Word: " + hiddenWord);
             System.out.println("Remaining attempts: " + attempts);

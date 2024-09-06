@@ -6,9 +6,9 @@ public class Exercise {
             case 1:
                 Problem1.run();
                 break;
-//            case 2:
-//                Problem2.run();
-//                break;
+            case 2:
+                Problem2.run();
+                break;
 //            case 3:
 //                Problem3.run();
 //                break;
