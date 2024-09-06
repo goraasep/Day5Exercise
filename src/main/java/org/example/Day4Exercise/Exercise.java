@@ -9,15 +9,15 @@ public class Exercise {
             case 2:
                 Problem2.run();
                 break;
-//            case 3:
-//                Problem3.run();
-//                break;
-//            case 4:
-//                Problem4.run();
-//                break;
-//            case 5:
-//                Problem5.run();
-//                break;
+            case 3:
+                Problem3.run();
+                break;
+            case 4:
+                Problem4.run();
+                break;
+            case 5:
+                Problem5.run();
+                break;
             default:
                 System.out.println("Not available");
         }

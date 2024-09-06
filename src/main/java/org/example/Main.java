@@ -9,10 +9,11 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("======= EXERCISE DAY 4 =======");
         System.out.println("1. Word Guessing Game.");
-        System.out.println("2. Write a program to print the following pattern for n rows.");
-        System.out.println("3. Write a code that reads n number of input from scanner.");
-        System.out.println("4. Guess the number.");
-        System.out.println("5. Write a code to swap the case of each character from string.");
+        System.out.println("2. Currency conversion.");
+        System.out.println("3. Remove odd numbers.");
+        System.out.println("4. Replace multiples of 3 with \"Fizz\", multiples of 5 with \"Buzz\", multiples of 3 and 5 with\n" +
+                "\"FizzBuzz\".");
+        System.out.println("5. Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.");
         Scanner scanIn = new Scanner(System.in);
         System.out.print("Choose Exercise: ");
         String arg = scanIn.nextLine();

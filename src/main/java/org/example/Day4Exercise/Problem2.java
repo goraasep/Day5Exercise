@@ -23,9 +23,8 @@ public class Problem2 {
             return scanInput.nextDouble();
         } catch (Exception e) {
             System.out.println("Type the correct amount.");
-            getAmount();
+            return getAmount();
         }
-        return 0;
     }
 
     public static void getConvertedAmount(Map<String, Double> currencyMap, double amount) {
