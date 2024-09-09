@@ -16,7 +16,8 @@ public class Exercise {
                 Problem4.run();
                 break;
             case 5:
-                Problem5.run();
+                Problem5 problem= new Problem5();
+                problem.run();
                 break;
             default:
                 System.out.println("Not available");

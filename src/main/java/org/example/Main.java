@@ -22,5 +22,6 @@ public class Main {
         } else {
             System.out.println("Input is not integer type.");
         }
+        scanIn.close();
     }
 }

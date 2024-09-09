@@ -3,18 +3,22 @@ package org.example.Day4Exercise;
 import java.util.Scanner;
 
 public class Problem5 {
-    public static void run() {
+    private Scanner scanner = new Scanner(System.in);
+
+    public void run() {
         System.out.println("5. Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.");
+
         int[] inArray = getArray();
         int target = getTarget();
         findPair(inArray, target);
+        this.scanner.close();
     }
 
-    public static int[] getArray() {
+    public int[] getArray() {
         try {
-            Scanner scanner = new Scanner(System.in);
+//            Scanner scanner = new Scanner(System.in);
             System.out.print("Input Array: ");
-            String inArrNumber = scanner.nextLine();
+            String inArrNumber = this.scanner.nextLine();
             String[] arrString = inArrNumber.split(",");
             int[] numbers = new int[arrString.length];
             for (int i = 0; i < numbers.length; i++) {
@@ -27,12 +31,14 @@ public class Problem5 {
         }
     }
 
-    public static int getTarget() {
+    public int getTarget() {
         try {
-            Scanner scanner = new Scanner(System.in);
+//            Scanner scanner = new Scanner(System.in);
             System.out.print("Input Target: ");
-            return scanner.nextInt();
+//            return Integer.parseInt(this.scanner.nextLine());
+            return this.scanner.nextInt();
         } catch (Exception e) {
+            this.scanner = new Scanner(System.in);
             System.out.println("Input is not integer.");
             return getTarget();
         }
@@ -40,17 +46,17 @@ public class Problem5 {
 
     public static void findPair(int[] inArray, int target) {
         try {
-            String result= "";
+            String result = "";
             for (int i = 0; i < inArray.length; i++) {
                 for (int j = i; j < inArray.length; j++) {
                     if (i != j && inArray[i] + inArray[j] == target) {
-                        result+="["+inArray[i]+","+inArray[j]+"] ";
+                        result += "[" + inArray[i] + "," + inArray[j] + "] ";
                     }
                 }
             }
-            if (result!=""){
+            if (result != "") {
                 System.out.print("Output : " + result);
-            }else{
+            } else {
                 System.out.print("No pair exist.");
             }
 
